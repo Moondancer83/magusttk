@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +24,29 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header-dark {
+  height: 50vh
+}
+.App-header-light {
+  height: 50vh;
+  width: 100vw;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link {
+  display: inline-block;
+  height: 9vmin;
+  line-height: 9vmin;
+  color: #61dafb;
+}
+.App-link:visited {
+  color: yellow;
+}
+
+.App-link-mirror {
+  transform: rotateX(180deg);
+  filter: invert(1);
+}
+.App-link-mirror:visited {
+  color: red
 }
